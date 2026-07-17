@@ -1,533 +1,268 @@
-/* ========================================
-   GLOBAL STYLES & VARIABLES (Apple Minimal)
-   ======================================== */
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raquel Jane — Social Media Manager</title>
+    <style>
 :root {
-    --primary: #E67070;            /* Coral - warm, energetic */
-    --secondary: #FFA78F;          /* Peach - soft accent */
-    --auxiliary: #FFE9D6;          /* Cream - light accents */
-    --default: #E0E9F1;            /* Soft grey-blue - neutral backgrounds */
-    
-    --text-primary: #1D1D1F;       /* Dark text - Apple black */
-    --text-secondary: #86868B;     /* Medium grey - supporting text */
-    --text-tertiary: #A1A1A6;      /* Light grey - hints */
-    
+    --primary: #E67070;
+    --secondary: #FFA78F;
+    --auxiliary: #FFE9D6;
+    --default: #E0E9F1;
+    --text-primary: #1D1D1F;
+    --text-secondary: #86868B;
+    --text-tertiary: #A1A1A6;
     --bg-white: #FFFFFF;
-    --bg-light: #E0E9F1;           /* Soft grey-blue background */
-    
-    --border: #D5D5D7;             /* Subtle border */
+    --bg-light: #E0E9F1;
+    --border: #D5D5D7;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; line-height: 1.6; color: var(--text-primary); background-color: var(--bg-white); font-size: 16px; -webkit-font-smoothing: antialiased; }
 
-html {
-    scroll-behavior: smooth;
-}
+.section-inner { max-width: 1000px; margin: 0 auto; padding: 0 40px; }
+.nav-container { max-width: 1000px; margin: 0 auto; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-    line-height: 1.6;
-    color: var(--text-primary);
-    background-color: var(--bg-white);
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-}
+h1 { font-size: 3.5rem; font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+h2 { font-size: 2.5rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
+h3 { font-size: 1.25rem; font-weight: 500; margin-bottom: 0.75rem; }
+p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; }
+a { color: var(--primary); text-decoration: none; transition: opacity 0.2s; }
+a:hover { opacity: 0.8; }
 
-.section-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
+.navbar { background-color: var(--bg-white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; padding: 16px 0; }
+.logo { font-size: 1rem; font-weight: 500; color: var(--text-primary); letter-spacing: -0.01em; }
+.nav-links { display: flex; list-style: none; gap: 2.5rem; }
+.nav-links a { font-size: 0.95rem; color: var(--text-secondary); font-weight: 400; transition: color 0.2s; }
+.nav-links a:hover { color: var(--text-primary); }
 
-.nav-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+.hero { background-color: var(--bg-white); padding: 120px 40px; text-align: left; }
+.hero-inner { max-width: 1000px; margin: 0 auto; }
+.hero h1 { font-size: 4rem; font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 1.5rem; color: var(--text-primary); }
+.hero p { font-size: 1.15rem; color: var(--text-secondary); max-width: 600px; margin-bottom: 2.5rem; line-height: 1.7; }
+.cta-button { display: inline-block; background-color: var(--primary); color: white; padding: 14px 36px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 1rem; transition: all 0.2s; border: none; cursor: pointer; }
+.cta-button:hover { background-color: #d15959; transform: translateY(-1px); }
 
-/* ========================================
-   TYPOGRAPHY
-   ======================================== */
+.about { padding: 100px 40px; background-color: var(--bg-light); }
+.about-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px; }
+.about-col h2 { margin-bottom: 1.5rem; }
+.about-col h3 { font-size: 0.9rem; font-weight: 500; margin-bottom: 1rem; margin-top: 2rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); }
+.about-col:first-child h3 { margin-top: 0; }
+.skills-minimal { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+.skills-minimal li { color: var(--text-secondary); font-size: 0.95rem; }
 
-h1 {
-    font-size: 3.5rem;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 1.5rem;
-}
+.work { padding: 100px 40px; background-color: var(--bg-white); }
+.work-header { margin-bottom: 80px; }
+.work-header h2 { margin-bottom: 1rem; }
+.work-header p { color: var(--text-secondary); font-size: 1rem; }
+.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 60px; margin-bottom: 80px; }
+.work-item h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem; }
+.work-item p { color: var(--text-secondary); font-size: 0.95rem; }
+.work-image { width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, var(--auxiliary) 0%, var(--secondary) 100%); border-radius: 12px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.work-image img { width: 100%; height: 100%; object-fit: cover; }
+.work-note { text-align: center; padding: 40px; background: var(--bg-light); border-radius: 12px; }
+.work-note p { color: var(--text-secondary); margin: 0; }
 
-h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    margin-bottom: 0.5rem;
-}
+.services { padding: 100px 40px; background-color: var(--bg-light); }
+.services-header { margin-bottom: 80px; }
+.services-header h2 { margin-bottom: 1rem; }
+.services-header p { color: var(--text-secondary); font-size: 1rem; }
+.services-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 60px; margin-bottom: 80px; }
+.service-item h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+.service-item p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem; }
+.service-price { color: var(--primary); font-weight: 500; font-size: 0.95rem; margin-bottom: 0; }
+.services-footer { text-align: center; color: var(--text-secondary); }
 
-h3 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 0.75rem;
-}
+.contact { padding: 100px 40px; background-color: var(--bg-white); }
+.contact h2 { margin-bottom: 80px; }
+.contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+.contact-block h3 { font-size: 0.9rem; font-weight: 500; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); }
+.contact-block p { margin: 0.5rem 0; font-size: 1rem; color: var(--text-primary); }
+.contact-block p.small { font-size: 0.85rem; color: var(--text-tertiary); }
+.contact-block a { color: var(--primary); font-weight: 500; }
+.social-minimal { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.social-minimal a { font-size: 1rem; color: var(--text-secondary); font-weight: 400; }
+.social-minimal a:hover { color: var(--primary); }
 
-p {
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: 1rem;
-}
-
-a {
-    color: var(--primary);
-    text-decoration: none;
-    transition: opacity 0.2s;
-}
-
-a:hover {
-    opacity: 0.8;
-}
-
-code {
-    background: var(--bg-light);
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: 'Monaco', 'Courier New', monospace;
-    font-size: 0.9em;
-    color: var(--text-primary);
-}
-
-/* ========================================
-   NAVIGATION
-   ======================================== */
-
-.navbar {
-    background-color: var(--bg-white);
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 16px 0;
-}
-
-.logo {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-primary);
-    letter-spacing: -0.01em;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-}
-
-.nav-links a {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    font-weight: 400;
-    transition: color 0.2s;
-}
-
-.nav-links a:hover {
-    color: var(--text-primary);
-}
+.footer { background-color: var(--bg-light); color: var(--text-secondary); text-align: center; padding: 40px; border-top: 1px solid var(--border); font-size: 0.95rem; }
+.footer p { margin: 0; color: var(--text-secondary); }
 
 @media (max-width: 768px) {
-    .nav-container {
-        padding: 0 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-    
-    .nav-links {
-        gap: 1.5rem;
-        font-size: 0.9rem;
-    }
-    
-    .section-inner {
-        padding: 0 20px;
-    }
+    .nav-container { padding: 0 20px; flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .nav-links { gap: 1.5rem; font-size: 0.9rem; }
+    .section-inner { padding: 0 20px; }
+    .hero { padding: 80px 20px; } .hero h1 { font-size: 2.5rem; } .hero p { font-size: 1rem; }
+    .about { padding: 60px 20px; } .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .work { padding: 60px 20px; } .work-grid { grid-template-columns: 1fr; gap: 40px; }
+    .services { padding: 60px 20px; } .services-list { grid-template-columns: 1fr; gap: 40px; }
+    .contact { padding: 60px 20px; } .contact-grid { grid-template-columns: 1fr; gap: 30px; } .contact h2 { margin-bottom: 40px; }
 }
+    </style>
+</head>
+<body>
 
-/* ========================================
-   HERO SECTION
-   ======================================== */
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Raquel Jane</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-.hero {
-    background-color: var(--bg-white);
-    padding: 120px 40px;
-    text-align: left;
-}
+<section id="home" class="hero">
+    <div class="hero-inner">
+        <h1>Social media that drives real growth</h1>
+        <p>I help e-commerce brands and startups build authentic audiences and grow revenue through strategic content, email automation, and data-driven insights.</p>
+        <a href="#contact" class="cta-button">Let's talk</a>
+    </div>
+</section>
 
-.hero-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+<section id="about" class="about">
+    <div class="section-inner">
+        <div class="about-grid">
+            <div class="about-col">
+                <h2>About</h2>
+                <p>I'm Raquel, a social media strategist and content creator based in the Philippines. With 10 years in supply chain and e-commerce, I bring operational thinking to social media strategy.</p>
+                <p>I work with Shopify brands, startups, and product-based businesses to build engaged communities and drive measurable growth.</p>
+            </div>
+            <div class="about-col">
+                <h3>Tools & Skills</h3>
+                <ul class="skills-minimal">
+                    <li>Meta Business Suite</li>
+                    <li>Klaviyo Email Marketing</li>
+                    <li>Metricool Analytics</li>
+                    <li>Shopify & E-commerce</li>
+                    <li>Google Sheets Dashboards</li>
+                    <li>Content Strategy & Planning</li>
+                </ul>
+            </div>
+            <div class="about-col">
+                <h3>Training</h3>
+                <p style="margin-bottom: 0.5rem;"><em>Add your certifications below:</em></p>
+                <ul class="skills-minimal">
+                    <li>Your course/certification - Year</li>
+                    <li>Your certification - Year</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-.hero h1 {
-    font-size: 4rem;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 1.5rem;
-    color: var(--text-primary);
-}
+<section id="work" class="work">
+    <div class="section-inner">
+        <div class="work-header">
+            <h2>Work</h2>
+            <p>Here's what I create and manage for clients</p>
+        </div>
+        
+        <div class="work-grid">
+            <div class="work-item">
+                <div class="work-image"><img src="images/sample-post-1.jpg" alt="Social media content"></div>
+                <h3>Content Creation</h3>
+                <p>Engaging posts, carousels, and video content designed to connect with your audience.</p>
+            </div>
+            <div class="work-item">
+                <div class="work-image"><img src="images/email-automation.jpg" alt="Email automation"></div>
+                <h3>Email Automation</h3>
+                <p>Klavioy flows that nurture customers and drive repeat purchases.</p>
+            </div>
+            <div class="work-item">
+                <div class="work-image"><img src="images/content-planner.jpg" alt="Content planner"></div>
+                <h3>Content Planning</h3>
+                <p>Strategic planning and scheduling to keep your content consistent.</p>
+            </div>
+            <div class="work-item">
+                <div class="work-image"><img src="images/google-sheet-template.jpg" alt="Analytics dashboard"></div>
+                <h3>Analytics Dashboards</h3>
+                <p>Custom Google Sheets dashboards to track what matters most.</p>
+            </div>
+            <div class="work-item">
+                <div class="work-image"><img src="images/growth-metrics.jpg" alt="Growth metrics"></div>
+                <h3>Growth Strategy</h3>
+                <p>Data-driven insights to help you grow followers and reach.</p>
+            </div>
+            <div class="work-item">
+                <div class="work-image"><img src="images/client-case-study.jpg" alt="Case study"></div>
+                <h3>Case Studies</h3>
+                <p>Real results from brands I've worked with. Before and after impact.</p>
+            </div>
+        </div>
+        <div class="work-note"><p>Add your screenshots to the <code>images/</code> folder</p></div>
+    </div>
+</section>
 
-.hero p {
-    font-size: 1.15rem;
-    color: var(--text-secondary);
-    max-width: 600px;
-    margin-bottom: 2.5rem;
-    line-height: 1.7;
-}
+<section id="services" class="services">
+    <div class="section-inner">
+        <div class="services-header">
+            <h2>Services</h2>
+            <p>What I offer</p>
+        </div>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Social Media Content</h3>
+                <p>Posts, carousels, video strategy, and content calendar planning.</p>
+                <p class="service-price">Custom pricing</p>
+            </div>
+            <div class="service-item">
+                <h3>Email Automation</h3>
+                <p>Klavioy setup, welcome sequences, cart recovery, and automated flows.</p>
+                <p class="service-price">Custom pricing</p>
+            </div>
+            <div class="service-item">
+                <h3>Full Management</h3>
+                <p>Complete social media management including content, community, and analytics.</p>
+                <p class="service-price">Custom pricing</p>
+            </div>
+            <div class="service-item">
+                <h3>Analytics & Dashboards</h3>
+                <p>Custom dashboards, performance tracking, reports, and growth insights.</p>
+                <p class="service-price">Custom pricing</p>
+            </div>
+        </div>
+        <p class="services-footer">All packages are customizable. <a href="#contact">Let's discuss what works for you.</a></p>
+    </div>
+</section>
 
-.cta-button {
-    display: inline-block;
-    background-color: var(--primary);
-    color: white;
-    padding: 14px 36px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.2s;
-    border: none;
-    cursor: pointer;
-}
+<section id="contact" class="contact">
+    <div class="section-inner">
+        <h2>Get in touch</h2>
+        <div class="contact-grid">
+            <div class="contact-block">
+                <h3>Phone</h3>
+                <p><a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a></p>
+                <p class="small">Replace with your number</p>
+            </div>
+            <div class="contact-block">
+                <h3>Email</h3>
+                <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p class="small">Replace with your email</p>
+            </div>
+            <div class="contact-block">
+                <h3>Social</h3>
+                <ul class="social-minimal">
+                    <li><a href="https://instagram.com/yourhandle">Instagram</a></li>
+                    <li><a href="https://facebook.com/yourhandle">Facebook</a></li>
+                    <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="contact-block">
+                <h3>Location</h3>
+                <p>Philippines</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-.cta-button:hover {
-    background-color: #d15959;
-    transform: translateY(-1px);
-}
+<footer class="footer">
+    <p>&copy; 2024 Raquel Jane. Social media manager & content creator.</p>
+</footer>
 
-@media (max-width: 768px) {
-    .hero {
-        padding: 80px 20px;
-    }
-    
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero p {
-        font-size: 1rem;
-    }
-}
-
-/* ========================================
-   ABOUT SECTION
-   ======================================== */
-
-.about {
-    padding: 100px 40px;
-    background-color: var(--bg-light);
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
-}
-
-.about-col h2 {
-    margin-bottom: 1.5rem;
-}
-
-.about-col h3 {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-.about-col:first-child h3 {
-    margin-top: 0;
-}
-
-.skills-minimal {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.skills-minimal li {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-}
-
-@media (max-width: 768px) {
-    .about {
-        padding: 60px 20px;
-    }
-    
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-}
-
-/* ========================================
-   WORK / PORTFOLIO SECTION
-   ======================================== */
-
-.work {
-    padding: 100px 40px;
-    background-color: var(--bg-white);
-}
-
-.work-header {
-    margin-bottom: 80px;
-}
-
-.work-header h2 {
-    margin-bottom: 1rem;
-}
-
-.work-header p {
-    color: var(--text-secondary);
-    font-size: 1rem;
-}
-
-.work-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-    margin-bottom: 80px;
-}
-
-.work-item h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-}
-
-.work-item p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-}
-
-.work-image {
-    width: 100%;
-    aspect-ratio: 1;
-    background: linear-gradient(135deg, var(--auxiliary) 0%, var(--secondary) 100%);
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.work-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.work-note {
-    text-align: center;
-    padding: 40px;
-    background: var(--bg-light);
-    border-radius: 12px;
-}
-
-.work-note p {
-    color: var(--text-secondary);
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .work {
-        padding: 60px 20px;
-    }
-    
-    .work-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-}
-
-/* ========================================
-   SERVICES SECTION
-   ======================================== */
-
-.services {
-    padding: 100px 40px;
-    background-color: var(--bg-light);
-}
-
-.services-header {
-    margin-bottom: 80px;
-}
-
-.services-header h2 {
-    margin-bottom: 1rem;
-}
-
-.services-header p {
-    color: var(--text-secondary);
-    font-size: 1rem;
-}
-
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-    margin-bottom: 80px;
-}
-
-.service-item h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-}
-
-.service-item p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-}
-
-.service-price {
-    color: var(--primary);
-    font-weight: 500;
-    font-size: 0.95rem;
-    margin-bottom: 0;
-}
-
-.services-footer {
-    text-align: center;
-    color: var(--text-secondary);
-}
-
-@media (max-width: 768px) {
-    .services {
-        padding: 60px 20px;
-    }
-    
-    .services-list {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-}
-
-.services-note a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* ========================================
-   CONTACT SECTION
-   ======================================== */
-
-.contact {
-    padding: 100px 40px;
-    background-color: var(--bg-white);
-}
-
-.contact h2 {
-    margin-bottom: 80px;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-}
-
-.contact-block h3 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-.contact-block p {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    color: var(--text-primary);
-}
-
-.contact-block p.small {
-    font-size: 0.85rem;
-    color: var(--text-tertiary);
-}
-
-.contact-block a {
-    color: var(--primary);
-    font-weight: 500;
-}
-
-.social-minimal {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.social-minimal a {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    font-weight: 400;
-}
-
-.social-minimal a:hover {
-    color: var(--primary);
-}
-
-@media (max-width: 768px) {
-    .contact {
-        padding: 60px 20px;
-    }
-    
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .contact h2 {
-        margin-bottom: 40px;
-    }
-}
-
-/* ========================================
-   FOOTER
-   ======================================== */
-
-.footer {
-    background-color: var(--bg-light);
-    color: var(--text-secondary);
-    text-align: center;
-    padding: 40px;
-    border-top: 1px solid var(--border);
-    font-size: 0.95rem;
-}
-
-.footer p {
-    margin: 0;
-    color: var(--text-secondary);
-}
-
-/* ========================================
-   UTILITY CLASSES
-   ======================================== */
-
-.small {
-    font-size: 0.85rem;
-    color: var(--text-tertiary);
-}
+</body>
+</html>
