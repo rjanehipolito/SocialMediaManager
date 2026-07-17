@@ -3,101 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raquel Jane — Social Media Manager</title>
+    <title>Raquel Jane — Social Media Strategist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Brown+Sugar&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 :root {
-    --primary: #E67070;
-    --secondary: #FFA78F;
-    --auxiliary: #FFE9D6;
-    --default: #E0E9F1;
-    --text-primary: #1D1D1F;
-    --text-secondary: #86868B;
-    --text-tertiary: #A1A1A6;
+    --primary: #8B6F47;
+    --secondary: #A89968;
+    --accent: #D4AF8F;
+    --dark-bg: #FEFBF7;
+    --text-primary: #2D2416;
+    --text-secondary: #6B5D4F;
+    --text-light: #9D8F80;
     --bg-white: #FFFFFF;
-    --bg-light: #E0E9F1;
-    --border: #D5D5D7;
+    --border: #E8DED3;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; line-height: 1.6; color: var(--text-primary); background-color: var(--bg-white); font-size: 16px; -webkit-font-smoothing: antialiased; }
+body { font-family: 'Quicksand', sans-serif; line-height: 1.8; color: var(--text-primary); background-color: var(--bg-white); font-size: 16px; -webkit-font-smoothing: antialiased; font-weight: 400; }
 
-.section-inner { max-width: 1000px; margin: 0 auto; padding: 0 40px; }
-.nav-container { max-width: 1000px; margin: 0 auto; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; }
+.section-inner { max-width: 1100px; margin: 0 auto; padding: 0 50px; }
+.nav-container { max-width: 1100px; margin: 0 auto; padding: 0 50px; display: flex; justify-content: space-between; align-items: center; }
 
-h1 { font-size: 3.5rem; font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
-h2 { font-size: 2.5rem; font-weight: 500; line-height: 1.2; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
-h3 { font-size: 1.25rem; font-weight: 500; margin-bottom: 0.75rem; }
-p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; }
-a { color: var(--primary); text-decoration: none; transition: opacity 0.2s; }
-a:hover { opacity: 0.8; }
+h1 { font-family: 'Brown Sugar', cursive; font-size: 4.5rem; font-weight: 400; line-height: 1.1; margin-bottom: 1.5rem; color: var(--text-primary); letter-spacing: 1px; }
+h2 { font-family: 'Brown Sugar', cursive; font-size: 3rem; font-weight: 400; line-height: 1.2; margin-bottom: 1rem; color: var(--text-primary); letter-spacing: 0.5px; }
+h3 { font-family: 'Quicksand', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.8px; margin-bottom: 0.8rem; color: var(--text-primary); text-transform: uppercase; }
+p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem; font-weight: 400; }
+a { color: var(--primary); text-decoration: none; transition: all 0.3s; }
+a:hover { color: var(--secondary); }
 
-.navbar { background-color: var(--bg-white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; padding: 16px 0; }
-.logo { font-size: 1rem; font-weight: 500; color: var(--text-primary); letter-spacing: -0.01em; }
-.nav-links { display: flex; list-style: none; gap: 2.5rem; }
-.nav-links a { font-size: 0.95rem; color: var(--text-secondary); font-weight: 400; transition: color 0.2s; }
-.nav-links a:hover { color: var(--text-primary); }
+.navbar { background-color: var(--bg-white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; padding: 20px 0; }
+.logo { font-family: 'Brown Sugar', cursive; font-size: 1.4rem; font-weight: 400; color: var(--text-primary); letter-spacing: 1px; }
+.nav-links { display: flex; list-style: none; gap: 3rem; }
+.nav-links a { font-size: 0.95rem; color: var(--text-secondary); font-weight: 500; transition: color 0.3s; letter-spacing: 0.5px; }
+.nav-links a:hover { color: var(--primary); }
 
-.hero { background-color: var(--bg-white); padding: 120px 40px; text-align: left; }
-.hero-inner { max-width: 1000px; margin: 0 auto; }
-.hero h1 { font-size: 4rem; font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 1.5rem; color: var(--text-primary); }
-.hero p { font-size: 1.15rem; color: var(--text-secondary); max-width: 600px; margin-bottom: 2.5rem; line-height: 1.7; }
-.cta-button { display: inline-block; background-color: var(--primary); color: white; padding: 14px 36px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 1rem; transition: all 0.2s; border: none; cursor: pointer; }
-.cta-button:hover { background-color: #d15959; transform: translateY(-1px); }
+.hero { background-color: var(--bg-white); padding: 140px 50px; text-align: left; }
+.hero-inner { max-width: 1100px; margin: 0 auto; }
+.hero h1 { font-size: 5rem; margin-bottom: 2rem; }
+.hero p { font-size: 1.1rem; color: var(--text-secondary); max-width: 650px; margin-bottom: 3rem; line-height: 1.9; }
+.cta-button { display: inline-block; background-color: var(--primary); color: white; padding: 16px 45px; border-radius: 2px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.3s; border: none; cursor: pointer; letter-spacing: 1px; }
+.cta-button:hover { background-color: var(--secondary); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(139, 111, 71, 0.2); }
 
-.about { padding: 100px 40px; background-color: var(--bg-light); }
-.about-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px; }
-.about-col h2 { margin-bottom: 1.5rem; }
-.about-col h3 { font-size: 0.9rem; font-weight: 500; margin-bottom: 1rem; margin-top: 2rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); }
+.about { padding: 120px 50px; background-color: var(--dark-bg); }
+.about-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 70px; }
+.about-col h2 { margin-bottom: 2rem; }
+.about-col h3 { font-size: 0.85rem; margin-bottom: 1.5rem; margin-top: 2.5rem; color: var(--primary); }
 .about-col:first-child h3 { margin-top: 0; }
-.skills-minimal { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
-.skills-minimal li { color: var(--text-secondary); font-size: 0.95rem; }
+.skills-minimal { list-style: none; display: flex; flex-direction: column; gap: 0.9rem; }
+.skills-minimal li { color: var(--text-secondary); font-size: 0.95rem; position: relative; padding-left: 20px; }
+.skills-minimal li:before { content: "—"; position: absolute; left: 0; color: var(--accent); }
 
-.work { padding: 100px 40px; background-color: var(--bg-white); }
+.work { padding: 120px 50px; background-color: var(--bg-white); }
 .work-header { margin-bottom: 80px; }
-.work-header h2 { margin-bottom: 1rem; }
+.work-header h2 { margin-bottom: 0.5rem; }
 .work-header p { color: var(--text-secondary); font-size: 1rem; }
-.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 60px; margin-bottom: 80px; }
-.work-item h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem; }
+.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 70px; margin-bottom: 60px; }
+.work-item h3 { margin-top: 1.8rem; margin-bottom: 0.8rem; font-size: 1rem; }
 .work-item p { color: var(--text-secondary); font-size: 0.95rem; }
-.work-image { width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, var(--auxiliary) 0%, var(--secondary) 100%); border-radius: 12px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.work-image { width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, #E8DED3 0%, #D4AF8F 100%); border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; }
 .work-image img { width: 100%; height: 100%; object-fit: cover; }
-.work-note { text-align: center; padding: 40px; background: var(--bg-light); border-radius: 12px; }
-.work-note p { color: var(--text-secondary); margin: 0; }
+.work-note { text-align: center; padding: 50px; background: var(--dark-bg); border-radius: 0; }
+.work-note p { color: var(--text-secondary); margin: 0; font-size: 0.9rem; }
 
-.services { padding: 100px 40px; background-color: var(--bg-light); }
+.services { padding: 120px 50px; background-color: var(--dark-bg); }
 .services-header { margin-bottom: 80px; }
-.services-header h2 { margin-bottom: 1rem; }
+.services-header h2 { margin-bottom: 0.5rem; }
 .services-header p { color: var(--text-secondary); font-size: 1rem; }
-.services-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 60px; margin-bottom: 80px; }
-.service-item h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
-.service-item p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem; }
-.service-price { color: var(--primary); font-weight: 500; font-size: 0.95rem; margin-bottom: 0; }
-.services-footer { text-align: center; color: var(--text-secondary); }
+.services-list { display: grid; grid-template-columns: 1fr 1fr; gap: 80px 70px; margin-bottom: 80px; }
+.service-item h3 { font-size: 1rem; margin-bottom: 1rem; margin-top: 0; }
+.service-item p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.2rem; line-height: 1.8; }
+.service-price { color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 0; letter-spacing: 0.5px; }
+.services-footer { text-align: center; color: var(--text-secondary); margin-top: 40px; }
 
-.contact { padding: 100px 40px; background-color: var(--bg-white); }
+.contact { padding: 120px 50px; background-color: var(--bg-white); }
 .contact h2 { margin-bottom: 80px; }
-.contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
-.contact-block h3 { font-size: 0.9rem; font-weight: 500; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); }
-.contact-block p { margin: 0.5rem 0; font-size: 1rem; color: var(--text-primary); }
-.contact-block p.small { font-size: 0.85rem; color: var(--text-tertiary); }
-.contact-block a { color: var(--primary); font-weight: 500; }
-.social-minimal { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
-.social-minimal a { font-size: 1rem; color: var(--text-secondary); font-weight: 400; }
+.contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 50px; }
+.contact-block h3 { font-size: 0.85rem; margin-bottom: 1.5rem; color: var(--primary); }
+.contact-block p { margin: 0.6rem 0; font-size: 1rem; color: var(--text-primary); }
+.contact-block p.small { font-size: 0.85rem; color: var(--text-light); }
+.contact-block a { color: var(--primary); font-weight: 600; }
+.social-minimal { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+.social-minimal a { font-size: 0.95rem; color: var(--text-secondary); font-weight: 500; }
 .social-minimal a:hover { color: var(--primary); }
 
-.footer { background-color: var(--bg-light); color: var(--text-secondary); text-align: center; padding: 40px; border-top: 1px solid var(--border); font-size: 0.95rem; }
-.footer p { margin: 0; color: var(--text-secondary); }
+.footer { background-color: var(--dark-bg); color: var(--text-secondary); text-align: center; padding: 50px; border-top: 1px solid var(--border); font-size: 0.9rem; }
+.footer p { margin: 0; color: var(--text-secondary); letter-spacing: 0.5px; }
 
 @media (max-width: 768px) {
-    .nav-container { padding: 0 20px; flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .nav-container { padding: 0 30px; flex-direction: column; align-items: flex-start; gap: 1.5rem; }
     .nav-links { gap: 1.5rem; font-size: 0.9rem; }
-    .section-inner { padding: 0 20px; }
-    .hero { padding: 80px 20px; } .hero h1 { font-size: 2.5rem; } .hero p { font-size: 1rem; }
-    .about { padding: 60px 20px; } .about-grid { grid-template-columns: 1fr; gap: 40px; }
-    .work { padding: 60px 20px; } .work-grid { grid-template-columns: 1fr; gap: 40px; }
-    .services { padding: 60px 20px; } .services-list { grid-template-columns: 1fr; gap: 40px; }
-    .contact { padding: 60px 20px; } .contact-grid { grid-template-columns: 1fr; gap: 30px; } .contact h2 { margin-bottom: 40px; }
+    .section-inner { padding: 0 30px; }
+    .hero { padding: 80px 30px; } .hero h1 { font-size: 3rem; } .hero p { font-size: 1rem; }
+    .about { padding: 80px 30px; } .about-grid { grid-template-columns: 1fr; gap: 50px; }
+    .work { padding: 80px 30px; } .work-grid { grid-template-columns: 1fr; gap: 50px; }
+    .services { padding: 80px 30px; } .services-list { grid-template-columns: 1fr; gap: 50px; }
+    .contact { padding: 80px 30px; } .contact-grid { grid-template-columns: 1fr; gap: 30px; } .contact h2 { margin-bottom: 50px; }
 }
     </style>
 </head>
@@ -118,9 +119,9 @@ a:hover { opacity: 0.8; }
 
 <section id="home" class="hero">
     <div class="hero-inner">
-        <h1>Social media that drives real growth</h1>
-        <p>I help e-commerce brands and startups build authentic audiences and grow revenue through strategic content, email automation, and data-driven insights.</p>
-        <a href="#contact" class="cta-button">Let's talk</a>
+        <h1>Social media strategy with impact</h1>
+        <p>I help e-commerce brands and startups build authentic audiences and measurable growth through strategic content, email systems, and data-driven insights.</p>
+        <a href="#contact" class="cta-button">Let's collaborate</a>
     </div>
 </section>
 
@@ -129,28 +130,32 @@ a:hover { opacity: 0.8; }
         <div class="about-grid">
             <div class="about-col">
                 <h2>About</h2>
-                <p>I'm Raquel, a social media strategist and content creator based in the Philippines. I treat social media like any other business system—with metrics, planning, and accountability.</p>
-                <p>I work with E-commerce brands, startups, and product-based businesses to build engaged communities and drive measurable growth.</p>
+                <p>I'm Raquel, a social media strategist based in the Philippines. I treat social media like any other business system—with metrics, planning, and accountability.</p>
+                <p>I work with product-based businesses and startups to structure social media as a strategic asset, not just a posting schedule.</p>
             </div>
             <div class="about-col">
-                <h3>Tools & Skills</h3>
+                <h3>Expertise</h3>
                 <ul class="skills-minimal">
-                    <li>Meta Business Suite</li>
-                    <li>Klaviyo Email Marketing</li>
+                    <li>Meta Business Suite & Ad Strategy</li>
+                    <li>Klaviyo Email Systems</li>
                     <li>Metricool Analytics</li>
-                    <li>Shopify & E-commerce</li>
-                    <li>Google Sheets Dashboards</li>
                     <li>Notion Templates</li>
-                    <li>Canva & Capcut</li>
+                    <li>Cap Cut and Canva</li>
+                    <li>Claude, ChatGPT, Gemini</li>
+                    <li>Shopify & E-commerce Integration</li>
                     <li>Content Strategy & Planning</li>
+                    <li>Data Dashboards & Reporting</li>
                 </ul>
             </div>
             <div class="about-col">
-                <h3>Training</h3>
-                <p style="margin-bottom: 0.5rem;"><em>Add your certifications below:</em></p>
+                <h3>Background</h3>
+                <p style="margin-bottom: 0.5rem;"><em>Skilled in:</em></p>
                 <ul class="skills-minimal">
-                    <li>Your course/certification - Year</li>
-                    <li>Your certification - Year</li>
+                    <li>Social Media Strategy</li>
+                    <li>Content Calendar and Scheduling/Planning</li>
+                    <li>Social Media Graphics and Content Creation</li>
+                    <li>Market Research</li>
+                    <li>Trackinng and Reporting Analytics</li>
                 </ul>
             </div>
         </div>
@@ -160,43 +165,43 @@ a:hover { opacity: 0.8; }
 <section id="work" class="work">
     <div class="section-inner">
         <div class="work-header">
-            <h2>Work</h2>
-            <p>Here's what I create and manage for clients</p>
+            <h2>Recent work</h2>
+            <p>Sample projects and case studies</p>
         </div>
         
         <div class="work-grid">
             <div class="work-item">
                 <div class="work-image"><img src="images/sample-post-1.jpg" alt="Social media content"></div>
-                <h3>Content Creation</h3>
-                <p>Engaging posts, carousels, and video content designed to connect with your audience.</p>
+                <h3>Content Strategy</h3>
+                <p>Strategic campaigns designed for authentic engagement and brand alignment</p>
             </div>
             <div class="work-item">
-                <div class="work-image"><img src="images/email-automation.jpg" alt="Email automation"></div>
-                <h3>Email Automation</h3>
-                <p>Klavioy flows that nurture customers and drive repeat purchases.</p>
+                <div class="work-image"><img src="images/email-automation.jpg" alt="Email systems"></div>
+                <h3>Email Systems</h3>
+                <p>Automated workflows that nurture customers and drive repeat business</p>
             </div>
             <div class="work-item">
-                <div class="work-image"><img src="images/content-planner.jpg" alt="Content planner"></div>
-                <h3>Content Planning</h3>
-                <p>Strategic planning and scheduling to keep your content consistent.</p>
+                <div class="work-image"><img src="images/content-planner.jpg" alt="Strategic planning"></div>
+                <h3>Strategic Planning</h3>
+                <p>Quarterly roadmaps and content calendars built for consistency</p>
             </div>
             <div class="work-item">
-                <div class="work-image"><img src="images/google-sheet-template.jpg" alt="Analytics dashboard"></div>
+                <div class="work-image"><img src="images/google-sheet-template.jpg" alt="Analytics dashboards"></div>
                 <h3>Analytics Dashboards</h3>
-                <p>Custom Google Sheets dashboards to track what matters most.</p>
+                <p>Custom tracking systems that measure what actually matters</p>
             </div>
             <div class="work-item">
-                <div class="work-image"><img src="images/growth-metrics.jpg" alt="Growth metrics"></div>
-                <h3>Growth Strategy</h3>
-                <p>Data-driven insights to help you grow followers and reach.</p>
+                <div class="work-image"><img src="images/growth-metrics.jpg" alt="Growth analysis"></div>
+                <h3>Growth Analysis</h3>
+                <p>Data-driven insights to identify opportunities and optimize performance</p>
             </div>
             <div class="work-item">
                 <div class="work-image"><img src="images/client-case-study.jpg" alt="Case study"></div>
                 <h3>Case Studies</h3>
-                <p>Real results from brands I've worked with. Before and after impact.</p>
+                <p>Real results from brands I've partnered with</p>
             </div>
         </div>
-        <div class="work-note"><p>Add your screenshots to the <code>images/</code> folder</p></div>
+        <div class="work-note"><p>Add your screenshots to the images folder</p></div>
     </div>
 </section>
 
@@ -204,47 +209,48 @@ a:hover { opacity: 0.8; }
     <div class="section-inner">
         <div class="services-header">
             <h2>Services</h2>
-            <p>What I offer</p>
+            <p>How I can help</p>
         </div>
         <div class="services-list">
             <div class="service-item">
-                <h3>Social Media Content</h3>
-                <p>Posts, carousels, video strategy, and content calendar planning.</p>
-                <p class="service-price">Custom pricing</p>
+                <h3>Strategy & Planning</h3>
+                <p>I build quarterly content strategies and systems designed to scale. From audience research to competitive analysis, every decision is grounded in data and your business objectives.</p>
+                <p class="service-price">Custom engagement</p>
+            </div>
+            <div class="service-item">
+                <h3>Content Systems</h3>
+                <p>From planning to execution. I create content calendars, manage production, and build systems that ensure consistency without burnout. Strategy meets execution.</p>
+                <p class="service-price">Custom engagement</p>
             </div>
             <div class="service-item">
                 <h3>Email Automation</h3>
-                <p>Klavioy setup, welcome sequences, cart recovery, and automated flows.</p>
-                <p class="service-price">Custom pricing</p>
+                <p>Klavioy workflows that work hard for you. Welcome sequences, cart recovery, customer retention—I build the systems that turn followers into customers.</p>
+                <p class="service-price">Custom engagement</p>
             </div>
             <div class="service-item">
-                <h3>Full Management</h3>
-                <p>Complete social media management including content, community, and analytics.</p>
-                <p class="service-price">Custom pricing</p>
-            </div>
-            <div class="service-item">
-                <h3>Analytics & Dashboards</h3>
-                <p>Custom dashboards, performance tracking, reports, and growth insights.</p>
-                <p class="service-price">Custom pricing</p>
+                <h3>Analytics & Reporting</h3>
+                <p>Custom dashboards that show what's working and why. I translate data into actionable insights so you know exactly where to focus your efforts next.</p>
+                <p class="service-price">Custom engagement</p>
             </div>
         </div>
-        <p class="services-footer">All packages are customizable. <a href="#contact">Let's discuss what works for you.</a></p>
+        <p class="services-footer">Each engagement is customized to your business stage, goals, and team capacity. <a href="#contact">Let's discuss what you need.</a></p>
     </div>
 </section>
 
 <section id="contact" class="contact">
     <div class="section-inner">
         <h2>Get in touch</h2>
+        
         <div class="contact-grid">
             <div class="contact-block">
-                <h3>Phone</h3>
-                <p><a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a></p>
-                <p class="small">Replace with your number</p>
+                <h3>Email</h3>
+                <p><a href="rjanehipolito@gmail.com">your.email@example.com</a></p>
+                <p class="small">Primary contact method</p>
             </div>
             <div class="contact-block">
-                <h3>Email</h3>
-                <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                <p class="small">Replace with your email</p>
+                <h3>Phone</h3>
+                <p><a href="tel:+639950330200">+63 XXX XXX XXXX</a></p>
+                <p class="small">WhatsApp available</p>
             </div>
             <div class="contact-block">
                 <h3>Social</h3>
@@ -257,13 +263,15 @@ a:hover { opacity: 0.8; }
             <div class="contact-block">
                 <h3>Location</h3>
                 <p>Philippines</p>
+                <p class="small">Remote-first, work globally</p>
             </div>
         </div>
     </div>
 </section>
 
 <footer class="footer">
-    <p>&copy; 2024 Raquel Jane. Social media manager & content creator.</p>
+    <p>Raquel Jane — Social Media Strategist & Systems Designer</p>
+    <p>Building brands that scale sustainably</p>
 </footer>
 
 </body>
